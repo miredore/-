@@ -3,24 +3,36 @@
 <head>
   <title>My Class</title>
   <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
 </head>
 <body bgcolor="#F0F8FF">
-  <CENTER><h1><p style="margin-top:50px;"><a href="index.html">나의 수업 기록</a></h1></CENTER>
-  <ul>
-    <li><a href="1.html">국어국문학과 수업</a></li>
-    <li><a href="2.html">디지털인문예술학과 수업</a></li>
-    <li><a href="3.html">교양 수업</a></li>
-  </ul>
-  <h2>나의 수강 목록</h2>
-  (전공이나 복수전공 수업에 비헤 많은 교양을 들었기 때문에 특별히 기억에 남았던 3가지를 골랐습니다.)
-    <ul>
-      <li><p style="margin-top:40px;"><strong>환경과 문학</strong></li>
-        처음에는 '환경'에 대한 좁은 의미만을 생각하여 자연과 관련된 내용일거라 예상했지만 수업에서 다루는 환경은 내 방, 집 같은 내 주변의 공간적인 환경과 문학 작품 속에 드러난 사회의 모습 같은 사회적인 환경 등 내가 처음 생각했던 환경의 의미를 포함한 더 넓은 의미의 환경이었습니다.
-        여러가지 뮤지컬, 책, 뉴스 등 매체들 통해서 다양한 주제에 대해서 이야기하고 그걸 매주 한장 분량의 글로 적는 과제를 통해서 많은 것을 생각해볼 수 있었고 또 그걸 글로 정리하는 연습도 됐던 것 같습니다.
-      <li><p style="margin-top:40px;"><strong>영상문학</strong></li>
-        실제로 영화를 보고 심리적인 관점에서 영화에 대한 이야기를 나눠보는 수업입니다. 주인공의 서사와 인물들의 관계, 감독의 연출 의도 등등 여러 부분을 프로이트와 융의 이론을 활용해서 해석해보았고 기말 과제로 실제 이 이론들을 적용해서 하나의 인물을 디자인해보면서 심리학이라는 분야에 대해서 많이 배울 수 있었습니다. 어려운 심리학 이론들을 영화 인물들을 예시로 들어서 쉽게 설명해주셔서 재미있게 들을 수 있었고, 이론적으로만 이해하는게 아니라 실제 사례에 적용해서 생각해볼 수 있었습니다.
-      <li><p style="margin-top:40px;"><strong>창의코딩</strong></li>
-        코딩이라는 이름 때문에 또 파이썬을 배울거라고 예상했지만 포토샵에 대한 수업이었습니다. 포토샵이 굉장히 여러가지로 활용된다는 것은 알고 있지만 너무 많은 기능이 있고 혼자 시도하기에는 어렵게만 느껴져서 한번도 도전해보지 못하고 있었는데 필수 교양으로 접하게 되니 좋은 기회가 됐다고 생각합니다. 또 각각의 예시를 들어주시면서 핵심적인 기능과 요소들을 쉽게 설명해주셔서 포토샵의 기본적인 내용에 대해서 많이 배울 수 있었습니다.
-    </ul>
+  <input id="night_day" type="button" value="night" onclick="if(document.querySelector('#night_day').value === 'night'){
+                                                document.querySelector('body').style.backgroundColor = '#212326';
+                                                document.querySelector('body').style.color = 'white';
+                                                document.querySelector('#night_day').value = 'day';}
+                                              else {document.querySelector('body').style.backgroundColor = '#F0F8FF';
+                                                document.querySelector('body').style.color = 'black';
+                                                document.querySelector('#night_day').value = 'night';}">
+  <h1><a href="index.html">나의 수업 기록</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">국어국문학과 수업</a></li>
+        <li><a href="2.html">디지털인문예술학과 수업</a></li>
+        <li><a href="3.html" style="color:orange">교양 수업</a></li>
+      </ol>
+      <div id="article">
+        <h2>나의 수강 목록</h2>
+        (전공이나 복수전공 수업에 비헤 많은 교양을 들었기 때문에 특별히 기억에 남았던 3가지를 골랐습니다.)
+            <ul>
+              <li><strong>환경과 문학</strong></li>
+                처음에는 '환경'에 대한 좁은 의미만을 생각하여 자연과 관련된 내용일거라 예상했지만 수업에서 다루는 환경은 내 방, 집 같은 내 주변의 공간적인 환경과 문학 작품 속에 드러난 사회의 모습 같은 사회적인 환경 등 내가 처음 생각했던 환경의 의미를 포함한 더 넓은 의미의 환경이었습니다.
+                여러가지 뮤지컬, 책, 뉴스 등 매체들 통해서 다양한 주제에 대해서 이야기하고 그걸 매주 한장 분량의 글로 적는 과제를 통해서 많은 것을 생각해볼 수 있었고 또 그걸 글로 정리하는 연습도 됐던 것 같습니다.
+              <li><p style="margin-top:40px;"><strong>영상문학</strong></li>
+                실제로 영화를 보고 심리적인 관점에서 영화에 대한 이야기를 나눠보는 수업입니다. 주인공의 서사와 인물들의 관계, 감독의 연출 의도 등등 여러 부분을 프로이트와 융의 이론을 활용해서 해석해보았고 기말 과제로 실제 이 이론들을 적용해서 하나의 인물을 디자인해보면서 심리학이라는 분야에 대해서 많이 배울 수 있었습니다. 어려운 심리학 이론들을 영화 인물들을 예시로 들어서 쉽게 설명해주셔서 재미있게 들을 수 있었고, 이론적으로만 이해하는게 아니라 실제 사례에 적용해서 생각해볼 수 있었습니다.
+              <li><p style="margin-top:40px;"><strong>창의코딩</strong></li>
+                코딩이라는 이름 때문에 또 파이썬을 배울거라고 예상했지만 포토샵에 대한 수업이었습니다. 포토샵이 굉장히 여러가지로 활용된다는 것은 알고 있지만 너무 많은 기능이 있고 혼자 시도하기에는 어렵게만 느껴져서 한번도 도전해보지 못하고 있었는데 필수 교양으로 접하게 되니 좋은 기회가 됐다고 생각합니다. 또 각각의 예시를 들어주시면서 핵심적인 기능과 요소들을 쉽게 설명해주셔서 포토샵의 기본적인 내용에 대해서 많이 배울 수 있었습니다.
+            </ui>
+      </div>
+    </div>
 </body>
 </html>

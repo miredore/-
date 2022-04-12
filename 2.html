@@ -3,27 +3,36 @@
 <head>
   <title>My Class</title>
   <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
 </head>
 <body bgcolor="#F0F8FF">
-  <CENTER><h1><p style="margin-top:50px;"><a href="index.html">나의 수업 기록</a></h1></CENTER>
-  <ul>
-    <li><a href="1.html">국어국문학과 수업</a></li>
-    <li><a href="2.html">디지털인문예술학과 수업</a></li>
-    <li><a href="3.html">교양 수업</a></li>
-  </ul>
-  <h2><a href="https://sites.google.com/view/dah-hallym" target="_blank" title"한림대학교 디지털인문예술전공">디지털인문예술학과</a>의 교육 목표</h2><img src="디인예 목표.png" width="100%">
-  <h2>나의 수강 목록</h2>
-    <ul>
-      <li><p style="margin-top:40px;"><strong>디지털인문예술입문</strong></li>
-        현재 수강 중인 수업입니다. 이름처럼 디지털인문예술이라는 분야를 처음 접하는 학생들을 위한 수업입니다.
-        Digital, Art, Humanities가 합쳐진 디지털인문예술이 뜻하는 의미에 대해서 이해하고 구글 사이트나 구글 애널리틱스, 피그마, html 등 앞으로의 디지털인문예술학과 수업에서 여러가지의 유의미한 것들을 만들어내는데에 필요한 기초들을 배우고 있습니다. 또 한림대학교 유튜브 랩같은 여러 유튜브, 사이트 등 유용한 정보들을 접하는 방법을 배우는 것도 큰 도움이 되는 것 같습니다.
-        <p style="margin-top:40px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/EUqOO6KnQHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <li><p style="margin-top:40px;"><strong>신화 구조와 이야기의 원형</strong></li>
-        현재 수강 중인 수업입니다. 창조신화, 건국신화, 영웅신화 등등 여러 신화들 속에서 찾아볼 수 있는 '원형'에 대해서 알아보고 그것이 현대의 콘텐츠에는 어떤식으로 활용되는지 또 어떻게 활용할 수 있는지를 배우는 수업입니다.
-        단순히 여러 신화들에는 공통점이 있다를 넘어서 왜? 라는 근본적인 부분에 대해서 생각해 볼 수 있는 수업입니다. 원형에 대해서 배우면서 글을 읽을 때 그 글의 의미에 대해서 여러 관점에서 해석하는 시각을 연습하고 있습니다.
-    </ul>
-    <br>
-    <br>
-    <br>
+  <input id="night_day" type="button" value="night" onclick="if(document.querySelector('#night_day').value === 'night'){
+                                                document.querySelector('body').style.backgroundColor = '#212326';
+                                                document.querySelector('body').style.color = 'white';
+                                                document.querySelector('#night_day').value = 'day';}
+                                              else {document.querySelector('body').style.backgroundColor = '#F0F8FF';
+                                                document.querySelector('body').style.color = 'black';
+                                                document.querySelector('#night_day').value = 'night';}">
+  <h1><a href="index.html">나의 수업 기록</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">국어국문학과 수업</a></li>
+        <li><a href="2.html" style="color:orange">디지털인문예술학과 수업</a></li>
+        <li><a href="3.html">교양 수업</a></li>
+      </ol>
+      <div id="article">
+        <h2><a href="https://sites.google.com/view/dah-hallym" target="_blank" title"한림대학교 디지털인문예술전공" style="color:#0077FF;">디지털인문예술학과</a>의 교육 목표</h2><img src="디인예 목표.png" width="100%">
+        <h2>나의 수강 목록</h2>
+          <ul>
+            <li><strong>디지털인문예술입문</strong></li>
+              현재 수강 중인 수업입니다. 이름처럼 디지털인문예술이라는 분야를 처음 접하는 학생들을 위한 수업입니다.
+              Digital, Art, Humanities가 합쳐진 디지털인문예술이 뜻하는 의미에 대해서 이해하고 구글 사이트나 구글 애널리틱스, 피그마, html 등 앞으로의 디지털인문예술학과 수업에서 여러가지의 유의미한 것들을 만들어내는데에 필요한 기초들을 배우고 있습니다. 또 한림대학교 유튜브 랩같은 여러 유튜브, 사이트 등 유용한 정보들을 접하는 방법을 배우는 것도 큰 도움이 되는 것 같습니다.
+              <p style="margin-top:40px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/EUqOO6KnQHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li><p style="margin-top:40px;"><strong>신화 구조와 이야기의 원형</strong></li>
+              현재 수강 중인 수업입니다. 창조신화, 건국신화, 영웅신화 등등 여러 신화들 속에서 찾아볼 수 있는 '원형'에 대해서 알아보고 그것이 현대의 콘텐츠에는 어떤식으로 활용되는지 또 어떻게 활용할 수 있는지를 배우는 수업입니다.
+              단순히 여러 신화들에는 공통점이 있다를 넘어서 왜? 라는 근본적인 부분에 대해서 생각해 볼 수 있는 수업입니다. 원형에 대해서 배우면서 글을 읽을 때 그 글의 의미에 대해서 여러 관점에서 해석하는 시각을 연습하고 있습니다.
+          </ul>
+      </div>
+    </div>
 </body>
 </html>

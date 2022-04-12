@@ -3,28 +3,37 @@
 <head>
   <title>My Class</title>
   <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
 </head>
 <body bgcolor="#F0F8FF">
-  <CENTER><h1><p style="margin-top:50px;"><a href="index.html">나의 수업 기록</a></h1></CENTER>
-  <ul>
-    <li><a href="1.html">국어국문학과 수업</a></li>
-    <li><a href="2.html">디지털인문예술학과 수업</a></li>
-    <li><a href="3.html">교양 수업</a></li>
-  </ul>
-  <h2><a href="https://korean.hallym.ac.kr/korean/index.do" target="_blank" title"한림대학교 국어국문학 전공">국어국문학과</a>의 교육 목표</h2><CENTER><img src="국어국문 목표.png" width="80%"></CENTER>
-  <h2>나의 수강 목록</h2>
-    <ul>
-      <li><p style="margin-top:40px;"><strong>국어학개론</strong></li>
-        국어국문 중 '국어'에 해당하는 부분의 가장 기초적인 수업입니다. 국어란 무엇인가라는 개념부터 시작해서 대표적인 외국어인 영어와 비교되는 한국어의 특징, 한국어의 계열과 특징 등 한국어에 대한 전반적인 지식을 폭넓고 간단하게 배울 수 있었습니다.<br> 특히 문법적인 부분들에 대해서도 형식적으로 배우기 보다는 근본적인 원리에 대해서 생각해볼 수 있어서 어렵기 보다는 재미있게 들을 수 있었던 것 같습니다.
-      <li><p style="margin-top:40px;"><strong>국문학개론</strong></li>
-        국어국문 중 '국문'에 해당하는 부분에 가장 기초적인 수업입니다. 국문의 범위부터 시작하여 각 시기별 우리나라 문학의 특징과 논점 등 국문사의 큰 흐름을 훑어볼 수 있었습니다. 역사적 흐름과 함께 용어, 인물 등을 배우면서 전체적인 틀을 잡을 수 있어서 많은 도움이 되었습니다.
-      <li><p style="margin-top:40px;"><strong>현대소설론</strong></li>
-        현재 수강 중인 수업입니다. 여러 문학 중에서도 '소설'에 초점을 맞추고 소설이란 무엇인가로 시작하여 현재 '인물'과 '플롯'에 대해서 배우고 있습니다. 여러가지 유형과 분석 방법 등을 배우면서 소설을 단순 재미가 아닌 다양한 시각에서 바라볼 수 있도록 배우고 있습니다.
-      <li><p style="margin-top:40px;"><strong>국문학사</strong></li>
-        현재 수강 중인 수업입니다. 국문학개론에서 배웠던 큰 흐름에 살을 붙이는 느낌으로, 국문학개론 수업에서 우리나라 문학의 흐름을 봤다면 국문학사 수업에서는 그 문학들이 학문적으로 연구된 흐름에 대해서 배우고 있습니다.
-    </ul>
-    <br>
-    <br>
-    <br>
-  </body>
-  </html>
+  <input id="night_day" type="button" value="night" onclick="if(document.querySelector('#night_day').value === 'night'){
+                                                document.querySelector('body').style.backgroundColor = '#212326';
+                                                document.querySelector('body').style.color = 'white';
+                                                document.querySelector('#night_day').value = 'day';}
+                                              else {document.querySelector('body').style.backgroundColor = '#F0F8FF';
+                                                document.querySelector('body').style.color = 'black';
+                                                document.querySelector('#night_day').value = 'night';}">
+  <h1><a href="index.html">나의 수업 기록</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html" style="color:orange; text-decoration:underline">국어국문학과 수업</a></li>
+        <li><a href="2.html">디지털인문예술학과 수업</a></li>
+        <li><a href="3.html">교양 수업</a></li>
+      </ol>
+      <div id="article">
+        <h2><a href="https://korean.hallym.ac.kr/korean/index.do" target="_blank" title"한림대학교 국어국문학 전공" style="color:#0077FF;">국어국문학과</a>의 교육 목표</h2><img src="국어국문 목표.png" width="80%">
+        <h2>나의 수강 목록</h2>
+          <ul>
+            <li><strong>국어학개론</strong></li>
+              국어국문 중 '국어'에 해당하는 부분의 가장 기초적인 수업입니다. 국어란 무엇인가라는 개념부터 시작해서 대표적인 외국어인 영어와 비교되는 한국어의 특징, 한국어의 계열과 특징 등 한국어에 대한 전반적인 지식을 폭넓고 간단하게 배울 수 있었습니다.<br> 특히 문법적인 부분들에 대해서도 형식적으로 배우기 보다는 근본적인 원리에 대해서 생각해볼 수 있어서 어렵기 보다는 재미있게 들을 수 있었던 것 같습니다.
+            <li><p style="margin-top:40px;"><strong>국문학개론</strong></li>
+              국어국문 중 '국문'에 해당하는 부분에 가장 기초적인 수업입니다. 국문의 범위부터 시작하여 각 시기별 우리나라 문학의 특징과 논점 등 국문사의 큰 흐름을 훑어볼 수 있었습니다. 역사적 흐름과 함께 용어, 인물 등을 배우면서 전체적인 틀을 잡을 수 있어서 많은 도움이 되었습니다.
+            <li><p style="margin-top:40px;"><strong>현대소설론</strong></li>
+              현재 수강 중인 수업입니다. 여러 문학 중에서도 '소설'에 초점을 맞추고 소설이란 무엇인가로 시작하여 현재 '인물'과 '플롯'에 대해서 배우고 있습니다. 여러가지 유형과 분석 방법 등을 배우면서 소설을 단순 재미가 아닌 다양한 시각에서 바라볼 수 있도록 배우고 있습니다.
+            <li><p style="margin-top:40px;"><strong>국문학사</strong></li>
+              현재 수강 중인 수업입니다. 국문학개론에서 배웠던 큰 흐름에 살을 붙이는 느낌으로, 국문학개론 수업에서 우리나라 문학의 흐름을 봤다면 국문학사 수업에서는 그 문학들이 학문적으로 연구된 흐름에 대해서 배우고 있습니다.
+          </ul>
+      </div>
+    </div>
+</body>
+</html>
